@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu - Le Dîner Exclusif</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: "#2563eb", /* bright blue */
+          "background-light": "#f0f6ff",
+          "background-dark": "#b58900", /* dark yellow */
+          accent: "#3b82f6",
+        },
+        fontFamily: {
+          display: ["Be Vietnam Pro", "sans-serif"]
+        }
+      },
+    },
+  }
+</script>
+
+
+<style>
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  }
+
+  body {
+    background-color: #FFF9C4;
+    color: #000000;
+  }
+</style>
+</head>
+<body class="bg-background-dark font-display text-white">
+    <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1 px-4 md:px-0">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/20 dark:border-[#493c22] px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Le Dîner Exclusif</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-6">
+  <nav class="hidden md:flex items-center gap-8">
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal" href="index.html">Home</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal" href="menu.html">Menu</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal" href="res.html">Book</a>
+
+</nav>
+
+<button id="menu-btn" class="flex items-center justify-center p-2 md:hidden text-gray-900 dark:text-white">
+  <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+
+
+
+
+
+
+
+
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-background-dark border-b border-gray-200/80 dark:border-gray-700 px-6 py-4 space-y-3">
+      <a href="index.html" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary">Home</a>
+      <a href="menu.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">Menu</a>
+      <a href="res.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">Book</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<main class="flex flex-col gap-8 mt-8">
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-white text-4xl font-black leading-tight tracking-[-0.033em]">Our Menu</p>
+<p class="text-[#cbb790] text-base font-normal leading-normal">A curated selection of the finest dishes, prepared with passion and precision.</p>
+</div>
+</div>
+<div class="sticky top-0 z-10 bg-background-dark py-4 px-3 border-b border-white/20 dark:border-[#493c22]">
+<div class="flex gap-3 overflow-x-auto pb-2">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary pl-4 pr-4">
+<p class="text-background-dark text-sm font-bold leading-normal">Appetizers</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/10 dark:bg-[#493c22] pl-4 pr-4 cursor-pointer hover:bg-white/20 dark:hover:bg-[#5a4a2a]">
+<p class="text-white text-sm font-medium leading-normal">Main Courses</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/10 dark:bg-[#493c22] pl-4 pr-4 cursor-pointer hover:bg-white/20 dark:hover:bg-[#5a4a2a]">
+<p class="text-white text-sm font-medium leading-normal">Desserts</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/10 dark:bg-[#493c22] pl-4 pr-4 cursor-pointer hover:bg-white/20 dark:hover:bg-[#5a4a2a]">
+<p class="text-white text-sm font-medium leading-normal">Cocktails</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/10 dark:bg-[#493c22] pl-4 pr-4 cursor-pointer hover:bg-white/20 dark:hover:bg-[#5a4a2a]">
+<p class="text-white text-sm font-medium leading-normal">Mocktails</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-8 px-4">
+<section>
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">Appetizers</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-center gap-4 bg-background-dark min-h-[72px] py-2 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14" data-alt="Seared Scallops with Saffron Risotto" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5BPlHHkKbqVgYXOrALi4A7bsKXLX61QzKn4BgrNI5CBQxmM_7-KqpB-CWkhyvNBw01AiY_6U2El_ghTklvsUsWyNXE2LcNPH7eJyuZA_puZ9kLgVYtaHwn-CiWxvcdxQzfDep8LQ4CMlObmolMamu2c1oQlwmrquOQkBCW_EYaBea7MhPeFwG9J0NMqgsU2aqjh8TeV8_Ul8I1amY4j6iPh-BOTdLmE_-Zr-xjJJZWV6QaB3yRDzov2oWIUDncF6OURVBiyhL6LhY");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-white text-base font-medium leading-normal line-clamp-1">Seared Scallops with Saffron Risotto</p>
+<p class="text-[#cbb790] text-sm font-normal leading-normal line-clamp-2">Fresh sea scallops pan-seared to perfection, served on a creamy bed of saffron-infused Arborio rice.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">$28</p></div>
+</div>
+<div class="flex items-center gap-4 bg-background-dark min-h-[72px] py-2 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14" data-alt="Burrata with Heirloom Tomatoes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBrtYyUR6bGMrG6_PymEe3Emn2rimxTtbjTZtjmaEoj_T-hP86HqI6ODv8vLVS1wmJznVgbu3afz4fmy8-TXSFzmJtGKRNuaqC5MZK5SEvQ_MYoFP_nJwHpDFVPFqEi6yVyQHZ-gIFUjkrwCYa0-LT37ZI12YWswJ8vSGyUzKyWM-Jnh9HtXQ1LXJB4TJYvpEQQiH8SK99H7Pbc7szCocgs-TBeGL1kWx4kiv4c_VEXQeLYtkiTpYra2p9hj_Xrs76MWwhanIv2xws2");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-white text-base font-medium leading-normal line-clamp-1">Burrata with Heirloom Tomatoes</p>
+<p class="text-[#cbb790] text-sm font-normal leading-normal line-clamp-2">Creamy burrata, ripe heirloom tomatoes, basil, and a drizzle of aged balsamic glaze.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">$22</p></div>
+</div>
+<div class="flex items-center gap-4 bg-background-dark min-h-[72px] py-2 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14" data-alt="Foie Gras Torchon" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAJDgnijRnZ1xj6PNwSngiw7QUpc-_GU2PUgKaFfHBi0mRkExDxQRB9DvtRIkiUERWsT3Zdk8XRz2F5zYVsUEU4PtPAyfPEyGGCeH2BaWpKPmyaucCwDXQB-X0_7vPXONhTXP8iiwZb4vyodmH248N8OEvDq3-8dOt3Ufugg8228fYDqjI3d9rpiV4FoqbnmpDWbnM5XT422WM0yRQuUblcaW3_8xF4ddrQsecp5U_0tAZ6y7A7IKKItbTwhH6edoJweNqKE8L4n3Q1");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-white text-base font-medium leading-normal line-clamp-1">Foie Gras Torchon</p>
+<p class="text-[#cbb790] text-sm font-normal leading-normal line-clamp-2">Delicate foie gras served with fig jam, toasted brioche, and a sprinkle of sea salt.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">$35</p></div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">Main Courses</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex flex-col gap-2 p-4 rounded-lg border border-primary/50 relative">
+<div class="absolute top-2 right-2 flex items-center gap-2 bg-primary/20 text-primary text-xs font-bold px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-sm">star</span>
+<span>Chef's Special</span>
+</div>
+<div class="flex items-center gap-4 bg-transparent justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14" data-alt="Wagyu Beef Filet" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAztXTGHAaNaIS-34nshxAe_eXOiCeAwQAoEP8u9MbZQrMeZp6SXHgAHZE_8dsPmyhlvNmzahKjGQzilkOUwu0J8oWivuindDcjRALZalrhLNp7Eyqd0a29dKpAssDpM5zptyIB07iw4YjsKjVmo_LwtTjqwWtXuQQASlU-dXtiSVgs4GsIGYolXh2oTBnqQ9RxT9trn2_MZ01DiFkdb4TD6RYgTOeng41sjfPccZcZQ9c-gsc9p1CPpyWQnpvZ-uXtxDfOnN3Bcjlx");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-white text-base font-medium leading-normal line-clamp-1">Wagyu Beef Filet</p>
+<p class="text-[#cbb790] text-sm font-normal leading-normal line-clamp-2">8oz A5 Wagyu filet, potato purée, asparagus, and a red wine reduction sauce.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">$95</p></div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-background-dark min-h-[72px] py-2 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14" data-alt="Pan-Seared Duck Breast" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBYBaUGTu-ocEM5G1kOYYxXvRlCg77I1ReDFCzDpJ1jvGsLLPJmsONNkbmWxBQ3RihgNZt8Jqpagogy58lQGEBcg5JVHGQPhbF4gikIo1ZFF6wY066Wi1EnmtFcNvjOWLJpyOrG8a19Wp6tAUB3X5_CfoDlx35juyMBuwDJSYJF4KNRtr_avClVZ1RrMRy3OTofKhk049F0lmY46RWVHumCfPJU0NVDc1oaVN-oXsWzCc5RmoopuyKF1w2ttemB_jFYwc90aua8xhPM");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-white text-base font-medium leading-normal line-clamp-1">Pan-Seared Duck Breast</p>
+<p class="text-[#cbb790] text-sm font-normal leading-normal line-clamp-2">Crispy skin duck breast with a cherry port sauce, served with wild rice pilaf.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">$48</p></div>
+</div>
+<div class="flex items-center gap-4 bg-background-dark min-h-[72px] py-2 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14" data-alt="Chilean Sea Bass" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDCILXecmhZLfNIQZBu_vuPq1fMdSwYf3n9H_NmE0UizIsjAx_WgZexaTeUEPZ3RyVpZJqmnPtO5k9_ZRqQ5MdGIC7Z7ljAdBKFBDc7_VsYLBZM62GGmd9rB-f3DO2ei0QBgmY7xFvLgiK56lfQqh1W_nbMepHrV1pyoWcvfnxgr6ufVVBjEcklfPH1bBQDkDdlV_CJx5pOny_iOecHPn4WDM7cgWNkXyUngSPMKakt7BPt1HV_sRsMvrevSlgirLjZP5yl77umkiiQ");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-white text-base font-medium leading-normal line-clamp-1">Chilean Sea Bass</p>
+<p class="text-[#cbb790] text-sm font-normal leading-normal line-clamp-2">Miso-glazed sea bass, bok choy, and shiitake mushrooms in a light dashi broth.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">$55</p></div>
+</div>
+<div class="flex items-center gap-4 bg-background-dark min-h-[72px] py-2 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14" data-alt="Lobster Thermidor" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB51xmN81Cu2PWKYO-QRgOz1-IJkFbbBgmzqh-89oy_0WeYTExX8URPZ5mBXROlmGkorClS1FMxq5c-7piL3Eh_UuESlKQyNp_H4sWU8pfzo7ffIBkYiJRxSpWKK2a4FzVUKj2b67kDYFKDDbHCGn3jyxI5wUsneGtmxw9f3hIWHwPJ4xp_tnBSGnh-ZCWqRwPX-6yEe24thAgAfVB5b9o7xZPsLiJSYuY6XLPioctZtOXvDqkNJ2rEDQLGquqYbKFRz0vXJndiUFtX");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-white text-base font-medium leading-normal line-clamp-1">Lobster Thermidor</p>
+<p class="text-[#cbb790] text-sm font-normal leading-normal line-clamp-2">A classic dish of creamy lobster meat stuffed back into the shell and browned.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">$75</p></div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">Desserts</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-center gap-4 bg-background-dark min-h-[72px] py-2 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14" data-alt="Chocolate Lava Cake" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDW_A1yE-Pa55Rtldhzq1afbgq-lxIOTj_5vK0Eg39YXoEgJRRX2dmGaH1XQqjnPXzM8Yd966FuYlZeCv7fBCa2qDHXqQuBkhTB_LCAFSeBWxTalLC9Zrqjf4293nJxcler2LBsMAqQZbMkLBf4hSPNH4XT366VpRvR4DLNCaYrSfXiiITva2suR-PmotOi8KtBvip21a1oqsrSIKyIKUNr4y3_1yKVb8rnuvXVmGY6je_X-OH4EBEOx5T65NsAqINqorNVOFU31HPv");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-white text-base font-medium leading-normal line-clamp-1">Chocolate Lava Cake</p>
+<p class="text-[#cbb790] text-sm font-normal leading-normal line-clamp-2">Warm, molten chocolate cake with raspberry coulis and vanilla bean ice cream.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">$18</p></div>
+</div>
+<div class="flex items-center gap-4 bg-background-dark min-h-[72px] py-2 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14" data-alt="Crème Brûlée" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKC6FL8yg90ZyPooNFygC6YnA0iqtHYmyjWRNfY81beP4-aX1a0iaaOQZrDe3Fe1rCBedLuoeYkXh5JhhlrSLD93NETggeDATO72maQTkZ4IwE5CaB1O0rz3egwiwxpgTHC8lDVRfwmoEmGDpAMDS9dzQJBVnRc_5LU6c_JWBUgOu6H99L81CtnxeGjtb9ckTGCWDLwKLlgXH5H9F8IBtrai6gHN_HVkD3PLcgaUvvNAVB21vCZS08tIFMQ0TseG8ZkeyVbbT2flHO");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-white text-base font-medium leading-normal line-clamp-1">Crème Brûlée Trio</p>
+<p class="text-[#cbb790] text-sm font-normal leading-normal line-clamp-2">A tasting of three classic flavors: vanilla, espresso, and lavender.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">$20</p></div>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+</div>
+</div>
+</div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+</script>
+</body></html>
